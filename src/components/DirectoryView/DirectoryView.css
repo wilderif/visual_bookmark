@@ -1,0 +1,42 @@
+/* .directoryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  gap: 20px;
+
+  padding: 20px;
+  margin: auto;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+} */
+
+.directoryContainer {
+  background: radial-gradient(
+    circle at top,
+    rgba(35, 137, 214, 0.98),
+    rgba(250, 176, 103, 0.87)
+  );
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 300px;
+  padding: 20px;
+  width: 210px;
+  height: 210px;
+}
+
+.directoryContent {
+  /* display: flex;
+  text-align: center;
+  justify-content: center; */
+  width: 80%;
+  height: 100%;
+  object-fit: contain;
+  /* max-width: 50px;
+  max-height: 50px; */
+}

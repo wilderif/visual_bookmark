@@ -1,0 +1,22 @@
+.pageContainer {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  float: center;
+  margin: 50px 30px;
+  border-radius: 30px;
+  /* background-color: transparent; */
+  background-color: #333333;
+
+  color: #333333;
+  font-weight: 800;
+  font-family: sans-serif;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pageContent {
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+}
