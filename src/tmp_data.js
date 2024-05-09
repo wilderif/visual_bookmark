@@ -58,33 +58,19 @@ const data = [
   },
 
   {
-    title: "Youtube",
-    type: "page",
-    alias: "youtube",
-    hyperlink: "https://www.youtube.com/",
-    logo: logo_youtube,
-  },
-
-  {
     title: "Naver",
     type: "page",
     alias: "naver",
     hyperlink: "https://www.naver.com/",
     logo: logo_naver,
   },
+
   {
     title: "Instagram",
     type: "page",
     alias: "instagram",
     hyperlink: "https://www.instagram.com/",
     logo: logo_instagram,
-  },
-  {
-    title: "GitHub",
-    type: "page",
-    alias: "github",
-    hyperlink: "https://www.github.com/",
-    logo: logo_github,
   },
 
   {
@@ -96,27 +82,11 @@ const data = [
   },
 
   {
-    title: "Youtube",
+    title: "GitHub",
     type: "page",
-    alias: "youtube",
-    hyperlink: "https://www.youtube.com/",
-    logo: logo_youtube,
-  },
-
-  {
-    title: "Youtube",
-    type: "page",
-    alias: "youtube",
-    hyperlink: "https://www.youtube.com/",
-    logo: logo_youtube,
-  },
-
-  {
-    title: "Youtube",
-    type: "page",
-    alias: "youtube",
-    hyperlink: "https://www.youtube.com/",
-    logo: logo_youtube,
+    alias: "github",
+    hyperlink: "https://www.github.com/",
+    logo: logo_github,
   },
 ];
 
