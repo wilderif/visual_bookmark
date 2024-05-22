@@ -1,16 +1,8 @@
-import PageView from "../PageView/PageView.jsx";
-import DirectoryView from "../DirectoryView/DirectoryView.jsx";
+import PageView from "./PageView.jsx";
+import DirectoryView from "./DirectoryView.jsx";
 
-export default function ContentContainer(props) {
-  return (
-    <div className="container">
-      {props.data.map((item, index) => {
-        return item.type === "directory" ? (
-          <DirectoryView key={index} directoryContent={item} />
-        ) : (
-          <PageView key={index} pageContent={item} />
-        );
-      })}
-    </div>
-  );
-}
+const ContentContainer = (props) => {
+  return;
+};
+
+export default ContentContainer;

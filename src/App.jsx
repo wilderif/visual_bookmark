@@ -1,25 +1,17 @@
 import React from "react";
 
-import "./App.css";
-
-import ContentContainer from "./components/ContentContainer/ContentContainer.jsx";
-
+import NavBar from "./components/NavBar.jsx";
+import SearchBar from "./components/SearchBar.jsx";
+import ContentContainer from "./components/ContentContainer.jsx";
 import data from "./tmp_data.js";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <nav className="navigation">
-        <button className="selected">Directory1</button>
-        <button>Directory2</button>
-        <button>Directory3</button>
-        <button>Add</button>
-      </nav>
-      <div className="main_page">
-        <ContentContainer data={data} />
-      </div>
-    </>
+    <div className="min-h-screen bg-gray-900 text-white">
+      <NavBar />
+      <SearchBar />
+    </div>
   );
-}
+};
 
 export default App;
