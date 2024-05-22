@@ -88,6 +88,30 @@ const data = [
     hyperlink: "https://www.github.com/",
     logo: logo_github,
   },
+
+  {
+    title: "Spotify",
+    type: "page",
+    alias: "spotify",
+    hyperlink: "https://open.spotify.com",
+    logo: logo_spotify,
+  },
+
+  {
+    title: "GitHub",
+    type: "page",
+    alias: "github",
+    hyperlink: "https://www.github.com/",
+    logo: logo_github,
+  },
+
+  {
+    title: "Spotify",
+    type: "page",
+    alias: "spotify",
+    hyperlink: "https://open.spotify.com",
+    logo: logo_spotify,
+  },
 ];
 
 export default data;
