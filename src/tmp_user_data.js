@@ -40,7 +40,7 @@ import logo_spotify from "./assets/logo_spotify.png";
 //   },
 // ];
 
-const data = [
+const bookmark_data = [
   {
     title: "Youtube",
     type: "page",
@@ -114,4 +114,4 @@ const data = [
   },
 ];
 
-export default data;
+export default bookmark_data;
