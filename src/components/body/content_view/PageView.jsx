@@ -1,4 +1,4 @@
-const PageView = () => {
+const PageView = ({ content }) => {
   return (
     <div>
       <h1>PageView</h1>
