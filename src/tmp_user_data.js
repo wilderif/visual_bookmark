@@ -119,6 +119,33 @@ const bookmark_data = [
     hyperlink: "https://open.spotify.com",
     logo: logo_spotify,
   },
+
+  {
+    id: "p3",
+    title: "Spotify",
+    type: "page",
+    alias: "spotify",
+    hyperlink: "https://open.spotify.com",
+    logo: logo_spotify,
+  },
+
+  {
+    id: "p4",
+    title: "Spotify",
+    type: "page",
+    alias: "spotify",
+    hyperlink: "https://open.spotify.com",
+    logo: logo_spotify,
+  },
+
+  {
+    id: "p5",
+    title: "Spotify",
+    type: "page",
+    alias: "spotify",
+    hyperlink: "https://open.spotify.com",
+    logo: logo_spotify,
+  },
 ];
 
 // const bookmark_data = [

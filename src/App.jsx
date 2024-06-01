@@ -2,8 +2,8 @@ import React, { useState, useContext } from "react";
 
 // import BookmarkDataProvider from "./contexts/BookmarkDataProvider.jsx";
 
-import NavBar from "./components/NavBar.jsx";
 import Space from "./components/body/Space.jsx";
+import SpaceSidebar from "./components/SpaceSidebar.jsx";
 
 import bookmark_data from "./tmp_user_data.js";
 
@@ -13,8 +13,8 @@ const App = () => {
 
   return (
     <>
-      <div className="min-h-screen bg-stone-400">
-        <NavBar />
+      <div className="flex h-screen bg-stone-400">
+        <SpaceSidebar />
         <Space spaceContent={bookmarks} />
       </div>
     </>
