@@ -6,7 +6,7 @@ const PageView = ({ url, logo_alt }) => {
 
   return (
     <div className="flex items-center justify-center">
-      <img src={logo_src} alt={logo_alt} className="w-full" />
+      <img src={logo_src} alt={logo_alt} className="w-full rounded-xl" />
     </div>
   );
 };
