@@ -5,7 +5,7 @@ import React, { useState, useContext } from "react";
 import Space from "./components/body/Space.jsx";
 import SpaceSidebar from "./components/SpaceSidebar.jsx";
 
-import bookmark_data from "./tmp_user_data.js";
+import bookmark_data from "./data/tmp_user_data.js";
 
 const App = () => {
   const [bookmarks, setBookmarks] = useState(bookmark_data);
