@@ -1,8 +1,11 @@
 const PageView = ({ content }) => {
   return (
-    <div>
-      <h1>PageView</h1>
-    </div>
+    <>
+      <button>
+        <img src={content.logo} alt={content.title} className="object-" />
+      </button>
+      <p>test</p>
+    </>
   );
 };
 

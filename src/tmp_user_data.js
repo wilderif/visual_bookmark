@@ -22,7 +22,7 @@ const bookmark_data = [
         title: "Youtube",
         alias: "youtube",
         hyperlink: "https://www.youtube.com/",
-        logo_image: logo_youtube,
+        logo: logo_youtube,
       },
       {
         id: "p2",
@@ -113,38 +113,38 @@ const bookmark_data = [
   },
   {
     id: "p2",
-    title: "Spotify",
     type: "page",
-    alias: "spotify",
-    hyperlink: "https://open.spotify.com",
-    logo: logo_spotify,
+    title: "Youtube",
+    alias: "youtube",
+    hyperlink: "https://www.youtube.com/",
+    logo: logo_youtube,
   },
 
   {
     id: "p3",
-    title: "Spotify",
     type: "page",
-    alias: "spotify",
-    hyperlink: "https://open.spotify.com",
-    logo: logo_spotify,
+    title: "Naver",
+    alias: "naver",
+    hyperlink: "https://www.naver.com/",
+    logo: logo_naver,
   },
 
   {
     id: "p4",
-    title: "Spotify",
     type: "page",
-    alias: "spotify",
-    hyperlink: "https://open.spotify.com",
-    logo: logo_spotify,
+    title: "GitHub",
+    alias: "github",
+    hyperlink: "https://www.github.com/",
+    logo: logo_github,
   },
 
   {
     id: "p5",
-    title: "Spotify",
     type: "page",
-    alias: "spotify",
-    hyperlink: "https://open.spotify.com",
-    logo: logo_spotify,
+    title: "Instagram",
+    alias: "instagram",
+    hyperlink: "https://www.instagram.com/",
+    logo: logo_instagram,
   },
 ];
 
