@@ -1,17 +1,41 @@
-const SpaceSidebar = () => {
+const SpaceSidebar = ({ spaces, currentSpace, selectSpace }) => {
   return (
-    <aside className="w-52 rounded-r-xl bg-stone-900 text-stone-50">
-      <h3>test 1</h3>
+    <aside className="w-52 rounded-r-xl bg-stone-900 pl-8 pr-6 pt-12 font-sans text-stone-50">
+      <h2 className="mb-8 font-bold uppercase text-stone-200 md:text-xl">
+        Spaces
+      </h2>
 
-      <div>
+      <div className="mb-8 mt-8">
         <ul>
-          <li>
-            <button>test 2</button>
-          </li>
-          <li>
-            <button>test 2</button>
-          </li>
+          {spaces.map((space) => {
+            let cssClasses =
+              "my-1 w-full rounded-sm px-2 py-1 text-left hover:bg-stone-800 hover:text-stone-200 text-sm";
+
+            if (space.id === currentSpace.id) {
+              cssClasses += " bg-stone-600 text-stone-200";
+            } else {
+              cssClasses += " text-stone-400";
+            }
+
+            return (
+              <li key={space.id}>
+                <button
+                  className={cssClasses}
+                  onClick={() => {
+                    selectSpace(space.id);
+                  }}
+                >
+                  {space.title}
+                </button>
+              </li>
+            );
+          })}
         </ul>
+      </div>
+      <div>
+        <button className="text- rounded-md bg-stone-700 px-4 py-2 text-stone-200 hover:bg-stone-600 hover:text-stone-100 md:text-base">
+          Add Space
+        </button>
       </div>
     </aside>
   );
