@@ -8,6 +8,8 @@ const PageView = ({ url, logo_alt }) => {
     window.open(url, "_blank");
   };
 
+  console.log(logo_src);
+
   return (
     <button
       className="flex h-full w-full items-center justify-center"

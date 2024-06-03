@@ -13,7 +13,7 @@ const SpaceSidebar = ({ spaces, currentSpace, selectSpace }) => {
                 "mb-2 w-full rounded-sm px-2 py-1 text-left hover:bg-stone-800 hover:text-stone-200 text-sm";
 
               if (space.id === currentSpace.id) {
-                cssClasses += " bg-stone-600 text-stone-100";
+                cssClasses += " bg-stone-600 text-stone-200";
               } else {
                 cssClasses += " text-stone-300";
               }
@@ -35,7 +35,7 @@ const SpaceSidebar = ({ spaces, currentSpace, selectSpace }) => {
         </div>
 
         <button className="w-full rounded-md px-2 py-1 text-left font-sans text-sm text-stone-400 hover:bg-stone-600 hover:text-stone-100">
-          + New Spacs
+          + New Space
         </button>
 
         <div className="mt-[420px]">
