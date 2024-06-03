@@ -3,7 +3,7 @@ import React, { useState, useContext } from "react";
 // import BookmarkDataProvider from "./contexts/BookmarkDataProvider.jsx";
 
 import Space from "./components/body/Space.jsx";
-import SpaceSidebar from "./components/SpaceSidebar.jsx";
+import SpaceSidebar from "./components/Sidebar/SpaceSidebar.jsx";
 
 import user_data_with_space from "./data/user_data_with_space.js";
 
