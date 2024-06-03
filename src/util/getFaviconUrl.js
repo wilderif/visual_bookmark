@@ -1,8 +1,7 @@
 const getFaviconUrl = (url) => {
   url = new URL(url);
   url = url.hostname;
-
-  // return url + "/favicon.ico/";
+  // return "https://" + url + "/favicon.ico/";
 
   // const faviconSize = [
   //   512, 256, 192, 180, 167, 152, 144, 128, 120, 114, 96, 72, 57, 48, 32, 16,
