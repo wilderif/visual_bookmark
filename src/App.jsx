@@ -8,7 +8,9 @@ import SpaceSidebar from "./components/SpaceSidebar.jsx";
 import user_data_with_space from "./data/user_data_with_space.js";
 
 const App = () => {
-  const [currentSpace, setCurrentSpace] = useState(user_data_with_space[0]);
+  const [currentSpace, setCurrentSpace] = useState(
+    user_data_with_space[user_data_with_space.length - 1],
+  );
 
   const handleSelectSpace = () => {
     setCurrentSpace();
