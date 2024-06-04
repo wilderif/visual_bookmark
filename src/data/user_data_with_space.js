@@ -207,6 +207,31 @@ const user_data = [
         title: "GitHub",
         url: "https://www.github.com/",
       },
+      {
+        id: "d2",
+        type: "directory",
+        title: "Lecture",
+        subItems: [
+          {
+            id: "p1",
+            type: "page",
+            title: "Udemy",
+            url: "https://www.udemy.com",
+          },
+          {
+            id: "p2",
+            type: "page",
+            title: "Bard",
+            url: "https://www.inflearn.com",
+          },
+          {
+            id: "p3",
+            type: "page",
+            title: "Claude",
+            url: "https://www.coursera.org",
+          },
+        ],
+      },
     ],
   },
 ];

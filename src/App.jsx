@@ -20,9 +20,6 @@ const App = () => {
     (space) => space.id === currentSpaceId,
   );
 
-  console.log(currentSpaceId);
-  console.log(currentSpace);
-
   return (
     <>
       <div className="flex h-screen bg-stone-400">

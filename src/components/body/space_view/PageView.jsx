@@ -10,10 +10,14 @@ const PageView = ({ url, logo_alt }) => {
 
   return (
     <button
-      className="flex h-full w-full items-center justify-center"
+      className="flex h-full w-full items-center justify-center p-1.5"
       onClick={handleClickButton}
     >
-      <img src={logo_src} alt={logo_alt} className="w-full rounded-xl" />
+      <img
+        src={logo_src}
+        alt={logo_alt}
+        className="aspect-square w-full rounded-lg"
+      />
     </button>
   );
 };
