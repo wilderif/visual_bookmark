@@ -11,7 +11,9 @@ const ContentContainer = ({ content }) => {
           <DirectoryView content={content} />
         )}
       </div>
-      <p className="mt-px font-sans text-sm font-normal">{content.title}</p>
+      <p className="mt-1 w-full truncate px-2 text-center font-sans text-xs font-normal">
+        {content.title}
+      </p>
     </div>
   );
 
