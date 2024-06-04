@@ -2,6 +2,7 @@ import getFaviconUrl from "../../../util/getFaviconUrl.js";
 
 const DirectoryView = ({ subItem }) => {
   const subItemIcons = [];
+
   for (let i = 0; i < subItem.length; i++) {
     if (i === 4) {
       break;
