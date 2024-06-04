@@ -30,6 +30,7 @@ const user_data = [
       },
     ],
   },
+
   {
     id: "s2",
     type: "space",
@@ -100,12 +101,14 @@ const user_data = [
     title: "Development",
     subItems: [],
   },
+
   {
     id: "s4",
     type: "space",
     title: "Reading List",
     subItems: [],
   },
+
   {
     id: "s5",
     type: "space",
@@ -208,7 +211,7 @@ const user_data = [
         url: "https://www.github.com/",
       },
       {
-        id: "d2",
+        id: "d1",
         type: "directory",
         title: "Lecture",
         subItems: [
@@ -227,8 +230,155 @@ const user_data = [
           {
             id: "p3",
             type: "page",
-            title: "Claude",
+            title: "Coursera",
             url: "https://www.coursera.org",
+          },
+        ],
+      },
+      {
+        id: "p17",
+        type: "page",
+        title: "Naver",
+        url: "https://www.naver.com/",
+      },
+      {
+        id: "p18",
+        type: "page",
+        title: "Notion",
+        url: "https://www.notion.com/",
+      },
+      {
+        id: "p19",
+        type: "page",
+        title: "Google",
+        url: "https://www.google.com/",
+      },
+      {
+        id: "d2",
+        type: "directory",
+        title: "Resource",
+        subItems: [
+          {
+            id: "p1",
+            type: "page",
+            title: "TailwindCSS",
+            url: "https://tailwindcss.com",
+          },
+          {
+            id: "p2",
+            type: "page",
+            title: "MDN Web Docs",
+            url: "https://developer.mozilla.org/en-US/",
+          },
+        ],
+      },
+      {
+        id: "d3",
+        type: "directory",
+        title: "Lecture",
+        subItems: [
+          {
+            id: "p1",
+            type: "page",
+            title: "Udemy",
+            url: "https://www.udemy.com",
+          },
+          {
+            id: "p2",
+            type: "page",
+            title: "Bard",
+            url: "https://www.inflearn.com",
+          },
+          {
+            id: "p3",
+            type: "page",
+            title: "Coursera",
+            url: "https://www.coursera.org",
+          },
+          {
+            id: "p4",
+            type: "page",
+            title: "Udemy",
+            url: "https://www.udemy.com",
+          },
+          {
+            id: "p5",
+            type: "page",
+            title: "Bard",
+            url: "https://www.inflearn.com",
+          },
+          {
+            id: "p6",
+            type: "page",
+            title: "Coursera",
+            url: "https://www.coursera.org",
+          },
+          {
+            id: "p7",
+            type: "page",
+            title: "Udemy",
+            url: "https://www.udemy.com",
+          },
+          {
+            id: "p8",
+            type: "page",
+            title: "Bard",
+            url: "https://www.inflearn.com",
+          },
+          {
+            id: "p9",
+            type: "page",
+            title: "Coursera",
+            url: "https://www.coursera.org",
+          },
+          {
+            id: "p10",
+            type: "page",
+            title: "Udemy",
+            url: "https://www.udemy.com",
+          },
+          {
+            id: "p11",
+            type: "page",
+            title: "Bard",
+            url: "https://www.inflearn.com",
+          },
+          {
+            id: "p12",
+            type: "page",
+            title: "Coursera",
+            url: "https://www.coursera.org",
+          },
+        ],
+      },
+      {
+        id: "d4",
+        type: "directory",
+        title: "Chatbot",
+        subItems: [
+          {
+            id: "p1",
+            type: "page",
+            title: "ChatGPT",
+            url: "https://chatgpt.com/",
+          },
+          {
+            id: "p2",
+            type: "page",
+            title: "Bard",
+            url: "https://gemini.google.com/app",
+          },
+          {
+            id: "p3",
+            type: "page",
+            title: "Claude",
+            url: "https://claude.ai/chats",
+          },
+          {
+            id: "p4",
+            type: "page",
+            title: "Copilot",
+            url: "https://copilot.microsoft.com",
           },
         ],
       },

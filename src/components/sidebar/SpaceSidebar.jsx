@@ -3,7 +3,7 @@ import SidebarConfigButton from "./SidebarConfigButton.jsx";
 const SpaceSidebar = ({ spaces, currentSpaceId, selectSpace }) => {
   return (
     <aside className="w-52 rounded-r-lg bg-stone-900 pl-6 pr-6 pt-12 font-sans text-stone-50">
-      <h2 className="mb-10 font-bold uppercase text-stone-200">Space</h2>
+      <h2 className="mb-10 font-bold uppercase text-stone-200">Temp header</h2>
 
       <div className="">
         <div>

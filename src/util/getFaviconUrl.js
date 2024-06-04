@@ -14,7 +14,8 @@ const getFaviconUrl = (url) => {
   //     url
   //   );
   // }
-  return "https://www.google.com/s2/favicons?sz=180&domain_url=" + url;
+  return "https://www.google.com/s2/favicons?sz=128&domain_url=" + url;
+  // return "https://www.google.com/s2/favicons?sz=180&domain_url=" + url;
 };
 
 export default getFaviconUrl;
