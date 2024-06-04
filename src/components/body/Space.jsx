@@ -2,11 +2,12 @@ import ContentContainer from "./ContentContainer.jsx";
 
 const Space = ({ spaceContent }) => {
   return (
-    // <div className="grid w-[calc(100%-208px)] grid-cols-[repeat(auto-fit,_210px)] grid-rows-[repeat(auto-fit,_210px)] justify-center px-5 pt-20">
-    <div className="grid w-[calc(100%-208px)] grid-cols-[repeat(auto-fit,_120px)] grid-rows-[repeat(auto-fit,_120px)] justify-center px-5 pt-28">
-      {spaceContent.map((item) => (
-        <ContentContainer key={item.id} item={item} />
-      ))}
+    <div className="w-full px-14 pt-28">
+      <div className="grid grid-cols-[repeat(auto-fit,_115px)] grid-rows-[repeat(auto-fit,_115px)]">
+        {spaceContent.map((item) => (
+          <ContentContainer key={item.id} item={item} />
+        ))}
+      </div>
     </div>
   );
 };
