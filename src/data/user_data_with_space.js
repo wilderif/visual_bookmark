@@ -286,7 +286,7 @@ const user_data = [
           {
             id: "p2",
             type: "page",
-            title: "Bard",
+            title: "Inflearn",
             url: "https://www.inflearn.com",
           },
           {
@@ -304,7 +304,7 @@ const user_data = [
           {
             id: "p5",
             type: "page",
-            title: "Bard",
+            title: "Inflearn",
             url: "https://www.inflearn.com",
           },
           {
@@ -322,7 +322,7 @@ const user_data = [
           {
             id: "p8",
             type: "page",
-            title: "Bard",
+            title: "Inflearn",
             url: "https://www.inflearn.com",
           },
           {
@@ -340,7 +340,7 @@ const user_data = [
           {
             id: "p11",
             type: "page",
-            title: "Bard",
+            title: "Inflearn",
             url: "https://www.inflearn.com",
           },
           {
@@ -381,6 +381,18 @@ const user_data = [
             url: "https://copilot.microsoft.com",
           },
         ],
+      },
+      {
+        id: "p17",
+        type: "page",
+        title: "Programmers",
+        url: "https://programmers.co.kr",
+      },
+      {
+        id: "p18",
+        type: "page",
+        title: "BOJ",
+        url: "https://www.acmicpc.net",
       },
     ],
   },
