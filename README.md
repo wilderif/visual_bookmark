@@ -12,9 +12,9 @@ This is a bookmark management project that aims to visualize and personalize boo
 
 ### Overview Images
 
-<img src="./project_overview/overview_1.png" alt="overview_1" width="">
-<img src="./project_overview/overview_2.png" alt="overview_2" width="">
-<img src="./project_overview/overview_3.png" alt="overview_3" width="">
-<img src="./project_overview/overview_4.png" alt="overview_4" width="">
+<img src="./project_overview/2024-06-05/overview_1.png" alt="overview_1" width="">
+<img src="./project_overview/2024-06-05/overview_2.png" alt="overview_2" width="">
+<img src="./project_overview/2024-06-05/overview_3.png" alt="overview_3" width="">
+<img src="./project_overview/2024-06-05/overview_4.png" alt="overview_4" width="">
 
 ---
