@@ -10,7 +10,11 @@ import user_data_with_space from "./data/user_data_with_space.js";
 const App = () => {
   const [bookmarkItems, setBookmarkItems] = useState(user_data_with_space);
   const [currentSpaceId, setCurrentSpaceId] = useState(
-    user_data_with_space[user_data_with_space.length - 1].id,
+    user_data_with_space[0].id,
+  );
+
+  const currentSpace = bookmarkItems.find(
+    (space) => space.id === currentSpaceId,
   );
 
   const handleSelectSpace = (spaceId) => {
@@ -26,14 +30,33 @@ const App = () => {
     };
 
     setBookmarkItems((prevBookmarkItems) => [...prevBookmarkItems, newSpace]);
+    setCurrentSpaceId(() => newSpace.id);
   };
 
-  const currentSpace = bookmarkItems.find(
-    (space) => space.id === currentSpaceId,
-  );
+  const handleAddPage = (spaceId, title, url) => {
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+      url = "https://" + url;
+    }
+    const newPage = {
+      id: `p${currentSpace.subItems.length + 1}`,
+      type: "page",
+      title: title,
+      url: url,
+    };
 
-  console.log(bookmarkItems);
-  console.log(currentSpace);
+    const newBookmarkItems = bookmarkItems.map((space) => {
+      if (space.id === spaceId) {
+        return {
+          ...space,
+          subItems: [...space.subItems, newPage],
+        };
+      }
+
+      return space;
+    });
+
+    setBookmarkItems(newBookmarkItems);
+  };
 
   return (
     <>
@@ -44,7 +67,11 @@ const App = () => {
           selectSpace={handleSelectSpace}
           handleAddSpace={handleAddSpace}
         />
-        <Space spaceContent={currentSpace.subItems} />
+        <Space
+          currentSpaceId={currentSpaceId}
+          spaceContent={currentSpace.subItems}
+          handleAddPage={handleAddPage}
+        />
       </div>
     </>
   );

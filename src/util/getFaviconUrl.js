@@ -1,6 +1,17 @@
 const getFaviconUrl = (url) => {
-  url = new URL(url);
-  url = url.hostname;
+  if (!url.startsWith("http://") && !url.startsWith("https://")) {
+    url = "https://" + url;
+  }
+  try {
+    url = new URL(url);
+  } catch (error) {
+    console.error("Invalid URL:", error.message);
+    return null;
+  }
+  console.log(url);
+
+  // url = new URL(url);
+  // url = url.hostname;
   // return "https://" + url + "/favicon.ico/";
 
   // const faviconSize = [
