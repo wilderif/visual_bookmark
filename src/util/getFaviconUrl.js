@@ -8,7 +8,6 @@ const getFaviconUrl = (url) => {
     console.error("Invalid URL:", error.message);
     return null;
   }
-  console.log(url);
 
   // url = new URL(url);
   // url = url.hostname;

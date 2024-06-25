@@ -22,12 +22,17 @@ const App = () => {
   };
 
   const handleAddSpace = (title) => {
+    const newSpaceId = bookmarkItems.length
+      ? `s${Number(bookmarkItems[bookmarkItems.length - 1].id.slice(1)) + 1}`
+      : "s1";
     const newSpace = {
-      id: `s${bookmarkItems.length + 1}`,
+      id: newSpaceId,
       type: "space",
       title: title,
       subItems: [],
     };
+
+    console.log(newSpace);
 
     setBookmarkItems((prevBookmarkItems) => [...prevBookmarkItems, newSpace]);
     setCurrentSpaceId(() => newSpace.id);
@@ -37,12 +42,19 @@ const App = () => {
     if (!url.startsWith("http://") && !url.startsWith("https://")) {
       url = "https://" + url;
     }
+
+    const newPageId = currentSpace.subItems.length
+      ? `p${Number(currentSpace.subItems[currentSpace.subItems.length - 1].id.slice(1)) + 1}`
+      : "p1";
+
     const newPage = {
-      id: `p${currentSpace.subItems.length + 1}`,
+      id: newPageId,
       type: "page",
       title: title,
       url: url,
     };
+
+    console.log(newPage);
 
     const newBookmarkItems = bookmarkItems.map((space) => {
       if (space.id === spaceId) {
