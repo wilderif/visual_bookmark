@@ -25,5 +25,6 @@ This is a bookmark management project that aims to visualize and personalize boo
 <img src="./project_overview/2024-06-25/2024-06-25-overview_2.png" alt="overview_2" width="">
 <img src="./project_overview/2024-06-25/2024-06-25-overview_3.png" alt="overview_3" width="">
 <img src="./project_overview/2024-06-25/2024-06-25-overview_4.png" alt="overview_4" width="">
+<img src="./project_overview/2024-06-25/2024-06-25-overview_5.png" alt="overview_5" width="">
 
 ---
