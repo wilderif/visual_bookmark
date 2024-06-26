@@ -21,14 +21,14 @@ const App = () => {
     setCurrentSpaceId(spaceId);
   };
 
-  const handleAddSpace = (title) => {
+  const handleAddSpace = (newSpaceTitle) => {
     const newSpaceId = bookmarkItems.length
       ? `s${Number(bookmarkItems[bookmarkItems.length - 1].id.slice(1)) + 1}`
       : "s1";
     const newSpace = {
       id: newSpaceId,
       type: "space",
-      title: title,
+      title: newSpaceTitle,
       subItems: [],
     };
 
@@ -38,9 +38,12 @@ const App = () => {
     setCurrentSpaceId(() => newSpace.id);
   };
 
-  const handleAddPage = (spaceId, title, url) => {
-    if (!url.startsWith("http://") && !url.startsWith("https://")) {
-      url = "https://" + url;
+  const handleAddPage = (curSpaceId, newPageTitle, newPageUrl) => {
+    if (
+      !newPageUrl.startsWith("http://") &&
+      !newPageUrl.startsWith("https://")
+    ) {
+      newPageUrl = "https://" + newPageUrl;
     }
 
     const newPageId = currentSpace.subItems.length
@@ -50,14 +53,30 @@ const App = () => {
     const newPage = {
       id: newPageId,
       type: "page",
-      title: title,
-      url: url,
+      title: newPageTitle,
+      url: newPageUrl,
     };
 
     console.log(newPage);
 
+    /*
+     * Check if the page with the same title already exists in the current space.
+     */
+    const isDuplicate = currentSpace.subItems.some(
+      (item) => item.title === newPageTitle,
+    );
+
+    if (isDuplicate) {
+      const userConfirmed = window.confirm(
+        `A page with the title "${newPageTitle}" already exists.\nDo you still want to add it?`,
+      );
+      if (!userConfirmed) {
+        return;
+      }
+    }
+
     const newBookmarkItems = bookmarkItems.map((space) => {
-      if (space.id === spaceId) {
+      if (space.id === curSpaceId) {
         return {
           ...space,
           subItems: [...space.subItems, newPage],
