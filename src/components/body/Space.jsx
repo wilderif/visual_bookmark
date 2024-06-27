@@ -4,6 +4,9 @@ import ContentContainer from "./ContentContainer.jsx";
 import AddPageButton from "./space_view/AddPageButton.jsx";
 import AddPageModal from "./add_item/AddPageModal.jsx";
 
+/**
+ * Component to display the content of the current space and handle adding new pages.
+ */
 const Space = ({ currentSpaceId, spaceContent, handleAddPage }) => {
   const [isOpen, setIsOpen] = useState(false);
 

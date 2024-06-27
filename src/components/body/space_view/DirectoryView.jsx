@@ -4,6 +4,10 @@ import DirectoryContentModal from "./DirectoryContentModal.jsx";
 
 import getFaviconUrl from "../../../util/getFaviconUrl.js";
 
+/**
+ * DirectoryView component renders a button displaying a grid of favicons for the items in the directory.
+ * When clicked, it opens a modal displaying the full directory content.
+ */
 const DirectoryView = ({ subItem, title }) => {
   const [isOpen, setIsOpen] = useState(false);
 

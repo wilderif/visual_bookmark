@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import SidebarConfigButton from "./SidebarConfigButton.jsx";
 import AddSpaceModal from "../body/add_item/AddSpaceModal.jsx";
 
+/**
+ * Sidebar component that displays the list of spaces and allows adding new spaces.
+ */
 const SpaceSidebar = ({
   spaces,
   currentSpaceId,

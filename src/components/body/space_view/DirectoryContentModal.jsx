@@ -3,6 +3,10 @@ import ReactDom from "react-dom";
 
 import ContentContainer from "../ContentContainer";
 
+/**
+ * DirectoryContentModal component displays a modal with the content of a directory.
+ * It shows a grid of ContentContainer components for each subitem pages.
+ */
 const DirectoryContentModal = ({ subItems, title, isOpen, onClose }, ref) => {
   const dialogRef = useRef();
 

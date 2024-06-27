@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 
 // import BookmarkDataProvider from "./contexts/BookmarkDataProvider.jsx";
 
@@ -7,6 +7,9 @@ import SpaceSidebar from "./components/sidebar/SpaceSidebar.jsx";
 
 import user_data_with_space from "./data/user_data_with_space.js";
 
+/**
+ * Main application component that manages and displays space sidebar and current space.
+ */
 const App = () => {
   const [bookmarkItems, setBookmarkItems] = useState(user_data_with_space);
   const [currentSpaceId, setCurrentSpaceId] = useState(
@@ -21,6 +24,10 @@ const App = () => {
     setCurrentSpaceId(spaceId);
   };
 
+  /**
+   * Add space with user input
+   * @param {string} newSpaceTitle
+   */
   const handleAddSpace = (newSpaceTitle) => {
     const newSpaceId = bookmarkItems.length
       ? `s${Number(bookmarkItems[bookmarkItems.length - 1].id.slice(1)) + 1}`
@@ -38,7 +45,17 @@ const App = () => {
     setCurrentSpaceId(() => newSpace.id);
   };
 
+  /**
+   * Add page with user input
+   * @param {string} curSpaceId
+   * @param {string} newPageTitle
+   * @param {string} newPageUrl
+   * @returns {|null} null if the user cancels adding after checking duplicated name
+   *
+   * @todo figure out more efficient way to setState
+   */
   const handleAddPage = (curSpaceId, newPageTitle, newPageUrl) => {
+    // Validate and format the URL
     if (
       !newPageUrl.startsWith("http://") &&
       !newPageUrl.startsWith("https://")
@@ -59,9 +76,7 @@ const App = () => {
 
     console.log(newPage);
 
-    /*
-     * Check if the page with the same title already exists in the current space.
-     */
+    // Check if the page with the same title already exists in the current space.
     const isDuplicate = currentSpace.subItems.some(
       (item) => item.title === newPageTitle,
     );
@@ -71,7 +86,7 @@ const App = () => {
         `A page with the title "${newPageTitle}" already exists.\nDo you still want to add it?`,
       );
       if (!userConfirmed) {
-        return;
+        return null;
       }
     }
 

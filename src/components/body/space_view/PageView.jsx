@@ -1,5 +1,8 @@
 import getFaviconUrl from "../../../util/getFaviconUrl.js";
 
+/**
+ * PageView component renders a button with a favicon image and opens the URL in a new tab when clicked.
+ */
 const PageView = ({ url, logo_alt }) => {
   // Todo: make it run once
   const logo_src = getFaviconUrl(url);

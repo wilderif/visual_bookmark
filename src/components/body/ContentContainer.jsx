@@ -1,6 +1,10 @@
 import PageView from "./space_view/PageView.jsx";
 import DirectoryView from "./space_view/DirectoryView.jsx";
 
+/**
+ * ContentContainer component renders a view based on the type of item passed as a prop.
+ * It displays either a DirectoryView or a PageView component inside a container.
+ */
 const ContentContainer = ({ item }) => {
   const contentToView = (
     <div className="flex flex-col items-center">

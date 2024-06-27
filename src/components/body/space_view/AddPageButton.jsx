@@ -1,3 +1,7 @@
+/**
+ * AddPageButton component renders a button that triggers the action to add a new page.
+ * It displays a plus icon inside a styled container.
+ */
 const AddPageButton = ({ handleOnClickAddPage }) => {
   return (
     <div className="flex flex-col items-center">

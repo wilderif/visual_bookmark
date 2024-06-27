@@ -1,6 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import ReactDom from "react-dom";
 
+/**
+ * AddPageModal component renders a modal for adding a new page.
+ * It contains input fields for the page title and URL and a button to submit the form.
+ */
 const AddPageModal = ({ handleAddPage, currentSpaceId, isOpen, onClose }) => {
   const [newPage, setNewPage] = useState({ title: "", url: "" });
   const dialogRef = useRef();

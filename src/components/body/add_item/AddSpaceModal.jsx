@@ -1,6 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import ReactDom from "react-dom";
 
+/**
+ * AddSpaceModal component renders a modal for adding a new space.
+ * It contains an input field for the space title and a button to submit the form.
+ */
 const AddSpaceModal = ({ handleAddSpace, isOpen, onClose }) => {
   const [inputTitle, setInputTitle] = useState("");
   const dialogRef = useRef();
